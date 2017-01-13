@@ -5,21 +5,21 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-	<!--交易相关 
-	<dubbo:reference id="insteadPayAccountingService" interface="com.zlebank.zplatform.trade.acc.service.InsteadPayAccountingService" version="1.0" retries="0"/>
-	<dubbo:reference id="refundAccountingService" interface="com.zlebank.zplatform.trade.acc.service.RefundAccountingService" version="1.0" retries="0"/>
-	<dubbo:reference id="withdrawAccountingService" interface="com.zlebank.zplatform.trade.acc.service.WithdrawAccountingService" version="1.0" retries="0"/>
-	<dubbo:reference id="tradeRiskControlService" interface="com.zlebank.zplatform.risk.service.TradeRiskControlService" version="1.0"/>
-	<dubbo:reference id="tradeFeeService" interface="com.zlebank.zplatform.fee.service.TradeFeeService" version="1.0"/> -->
+	<!--交易相关  -->
+	<dubbo:reference id="insteadPayAccountingService" interface="com.zcbspay.platform.support.trade.acc.service.InsteadPayAccountingService" version="1.0" retries="0"/>
+	<dubbo:reference id="refundAccountingService" interface="com.zcbspay.platform.support.trade.acc.service.RefundAccountingService" version="1.0" retries="0"/>
+	<dubbo:reference id="withdrawAccountingService" interface="com.zcbspay.platform.support.trade.acc.service.WithdrawAccountingService" version="1.0" retries="0"/>
+	<dubbo:reference id="tradeRiskControlService" interface="com.zcbspay.platform.support.risk.service.TradeRiskControlService" version="1.0"/>
+	<dubbo:reference id="tradeFeeService" interface="com.zcbspay.platform.support.fee.service.TradeFeeService" version="1.0"/>
 	
-	<!--会员相关  
-	<dubbo:reference id="merchService" interface="com.zlebank.zplatform.member.merchant.service.MerchService" version="1.0"/>
-	<dubbo:reference id="memberService" interface="com.zlebank.zplatform.member.individual.service.MemberService" version="1.0"/>
-	<dubbo:reference id="coopInstiService" interface="com.zlebank.zplatform.member.coopinsti.service.CoopInstiService" version="1.0"/>
-	<dubbo:reference id="memberAccountService" interface="com.zlebank.zplatform.member.individual.service.MemberAccountService" version="1.0"/>
-	<dubbo:reference id="coopInstiProductService" interface="com.zlebank.zplatform.member.coopinsti.service.CoopInstiProductService" version="1.0"/>
-	<dubbo:reference id="enterpriseService" interface="com.zlebank.zplatform.member.merchant.service.EnterpriseService" version="1.0"/>
-	<dubbo:reference id="memberBankCardService" interface="com.zlebank.zplatform.member.individual.service.MemberBankCardService" version="1.0"/>
-	<dubbo:reference id="memberInfoService" interface="com.zlebank.zplatform.member.individual.service.MemberInfoService" version="1.0"/>-->
-	<dubbo:annotation package="com.zcbspay.platform.orderinfo"/>
+	<!--会员相关  -->
+	<dubbo:reference id="merchService" interface="com.zcbspay.platform.member.merchant.service.MerchService" version="1.0"/>
+	<dubbo:reference id="memberService" interface="com.zcbspay.platform.member.individual.service.MemberService" version="1.0"/>
+	<dubbo:reference id="coopInstiService" interface="com.zcbspay.platform.member.coopinsti.service.CoopInstiService" version="1.0"/>
+	<dubbo:reference id="memberAccountService" interface="com.zcbspay.platform.member.individual.service.MemberAccountService" version="1.0"/>
+	<dubbo:reference id="coopInstiProductService" interface="com.zcbspay.platform.member.coopinsti.service.CoopInstiProductService" version="1.0"/>
+	<dubbo:reference id="enterpriseService" interface="com.zcbspay.platform.member.merchant.service.EnterpriseService" version="1.0"/>
+	<dubbo:reference id="memberBankCardService" interface="com.zcbspay.platform.member.individual.service.MemberBankCardService" version="1.0"/>
+	<dubbo:reference id="memberInfoService" interface="com.zcbspay.platform.member.individual.service.MemberInfoService" version="1.0"/>
+	<!-- <dubbo:annotation package="com.zcbspay.platform.orderinfo"/> -->
 </beans>

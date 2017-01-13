@@ -70,28 +70,28 @@ public class InsteadPayOrderServiceImpl implements InsteadPayOrderService {
 	private CommonOrderService commonOrderService;
 	@Autowired
 	private TxncodeDefDAO txncodeDefDAO;
-	@Reference(version="1.0")
+	@Autowired
 	private CoopInstiService coopInstiService ;
-	@Reference(version="1.0")
+	@Autowired
 	private MemberService memberService;
-	@Reference(version="1.0")
+	@Autowired
 	private MemberAccountService memberAccountService;
 	
 	@Autowired
 	private InsteadPayRealtimeDAO insteadPayRealtimeDAO;
 	@Autowired
 	private SerialNumberService serialNumberService;
-	@Reference(version="1.0")
+	@Autowired
 	private MerchService merchService;
-	@Reference(version="1.0")
+	@Autowired
 	private CoopInstiProductService coopInstiProductService;
-	@Reference(version="1.0")
+	@Autowired
 	private EnterpriseService enterpriseService;
 	@Autowired
 	private TxnsLogDAO txnsLogDAO;
-	@Reference(version="1.0")
+	@Autowired
 	private InsteadPayAccountingService insteadPayAccountingService;
-	@Reference(version="1.0")
+	@Autowired
 	private TradeFeeService tradeFeeService;
 	/**
 	 *

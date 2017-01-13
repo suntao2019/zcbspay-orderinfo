@@ -68,23 +68,23 @@ public class WithdrawOrderServiceImpl implements WithdrawOrderService {
 	private CommonOrderService commonOrderService;
 	@Autowired
 	private TxncodeDefDAO txncodeDefDAO;
-	@Reference(version="1.0")
+	@Autowired
 	private MerchService merchService;
-	@Reference(version="1.0")
+	@Autowired
 	private CoopInstiProductService coopInstiProductService;
 	@Autowired
 	private SerialNumberService serialNumberService;
 	@Autowired
 	private TxnsLogDAO txnsLogDAO;
-	@Reference(version="1.0")
+	@Autowired
 	private CoopInstiService coopInstiService;
 	@Autowired
 	private TxnsWithdrawDAO txnsWithdrawDAO;
-	@Reference(version="1.0")
+	@Autowired
 	private WithdrawAccountingService withdrawAccountingService;
-	@Reference(version="1.0")
+	@Autowired
 	private TradeRiskControlService tradeRiskControlService;
-	@Reference(version="1.0")
+	@Autowired
 	private TradeFeeService tradeFeeService;
 	@Autowired
 	private TxnsOrderinfoDAO txnsOrderinfoDAO;

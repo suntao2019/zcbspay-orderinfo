@@ -62,21 +62,21 @@ public class RefundOrderServiceImpl extends AbstractRefundOrderService implement
 	private TxnsLogDAO txnsLogDAO;
 	@Autowired
 	private TxncodeDefDAO txncodeDefDAO;
-	@Reference(version="1.0")
+	@Autowired
 	private MerchService merchService;
-	@Reference(version="1.0")
+	@Autowired
 	private CoopInstiProductService coopInstiProductService;
 	@Autowired
 	private SerialNumberService serialNumberService;
-	@Reference(version="1.0")
+	@Autowired
 	private CoopInstiService coopInstiService;
 	@Autowired
 	private TxnsRefundDAO txnsRefundDAO;
-	@Reference(version="1.0")
+	@Autowired
 	private RefundAccountingService refundAccountingService;
-	@Reference(version="1.0")
+	@Autowired
 	private TradeRiskControlService tradeRiskControlService;
-	@Reference(version="1.0")
+	@Autowired
 	private TradeFeeService tradeFeeService;
 	/**
 	 *

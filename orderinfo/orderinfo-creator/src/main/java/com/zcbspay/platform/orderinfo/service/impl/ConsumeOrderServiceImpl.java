@@ -51,15 +51,15 @@ public class ConsumeOrderServiceImpl implements ConsumeOrderService {
 	private CommonOrderService commonOrderService;
 	@Autowired
 	private SerialNumberService serialNumberService;
-	@Reference(version="1.0")
+	@Autowired
 	private CoopInstiService coopInstiService;
-	@Reference(version="1.0")
+	@Autowired
 	private MerchService merchService;
-	@Reference(version="1.0")
+	@Autowired
 	private MemberInfoService memberInfoService;
 	@Autowired
 	private TxncodeDefDAO txncodeDefDAO;
-	@Reference(version="1.0")
+	@Autowired
 	private CoopInstiProductService coopInstiProductService;
 
 	@Override

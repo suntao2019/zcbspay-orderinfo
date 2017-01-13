@@ -61,15 +61,16 @@ public abstract class AbstractConsumeOrderService implements CheckOfServcie<Cons
 	private TxnsOrderinfoDAO txnsOrderinfoDAO;
 	@Autowired
 	private TxncodeDefDAO txncodeDefDAO;
-	@Reference(version="1.0")
+	
+	@Autowired
 	private MerchService merchService;
 	@Autowired
 	private ProdCaseDAO prodCaseDAO;
-	@Reference(version="1.0")
+	@Autowired
 	private MemberService memberService;
-	@Reference(version="1.0")
+	@Autowired
 	private CoopInstiService coopInstiService;
-	@Reference(version="1.0")
+	@Autowired
 	private MemberAccountService memberAccountService;
 	/**
 	 * 订单非空有效性检查
@@ -146,6 +147,7 @@ public abstract class AbstractConsumeOrderService implements CheckOfServcie<Cons
         	if(StringUtils.isEmpty(orderBean.getMerId())){
         		 throw new OrderException("OD004");
         	}
+        	logger.info(merchService+"");
         	MerchantBean member = merchService.getMerchBymemberId(orderBean.getMerId());//memberService.getMemberByMemberId(order.getMerId());.java
         	if(member==null){
         		throw new OrderException("OD009");

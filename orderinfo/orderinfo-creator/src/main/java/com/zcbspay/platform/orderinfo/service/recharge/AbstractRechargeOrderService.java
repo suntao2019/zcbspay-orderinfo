@@ -61,15 +61,15 @@ public abstract class AbstractRechargeOrderService implements OrderService,Check
 	private TxnsOrderinfoDAO txnsOrderinfoDAO;
 	@Autowired
 	private TxncodeDefDAO txncodeDefDAO;
-	@Reference(version="1.0")
+	@Autowired
 	private MerchService merchService;
 	@Autowired
 	private ProdCaseDAO prodCaseDAO;
-	@Reference(version="1.0")
+	@Autowired
 	private MemberService memberService;
-	@Reference(version="1.0")
+	@Autowired
 	private CoopInstiService coopInstiService;
-	@Reference(version="1.0")
+	@Autowired
 	private MemberAccountService memberAccountService;
 	
 	/**

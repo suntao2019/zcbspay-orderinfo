@@ -81,13 +81,13 @@ public class CommonOrderServiceImpl implements CommonOrderService{
 	private TxncodeDefDAO txncodeDefDAO;
 	@Autowired
 	private ProdCaseDAO prodCaseDAO;
-	@Reference(version="1.0")
+	@Autowired
 	private MerchService merchService;
-	@Reference(version="1.0")
+	@Autowired
 	private MemberService memberService;
-	@Reference(version="1.0")
+	@Autowired
 	private CoopInstiService coopInstiService;
-	@Reference(version="1.0")
+	@Autowired
 	private MemberAccountService memberAccountService;
 	@Autowired
 	private TxnsLogDAO txnsLogDAO;
